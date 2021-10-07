@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">List Movie</string>
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">R e g i s t e r</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello</string>
+    <string name="text_title">WELCOME</string>
+    <string name="user_list">User List</string>
+    <string name="update_page">Update Page</string>
+    <string name="button_delete">Delete</string>
+    <string name="show_password">Show Password</string>
+    <string name="list_database">List Database</string>
+    <string name="id">ID</string>
+    <string name="search">Search</string>
+    <string name="update">U p d a t e</string>
+    <string name="title">Title</string>
+    <string name="year">Year</string>
+    <string name="genre">Genre</string>
+    <string name="description">Description</string>
+
+    <string-array name="data_genre">
+        <item>- Adventure/Comedy</item>
+        <item>- Drama/Adventure</item>
+        <item>- Drama/Fantasy</item>
+        <item>- Fantasy/Adventure</item>
+        <item>- Fantasy/Mystery</item>
+        <item>- Fantasy/Romance</item>
+        <item>- Fantasy/Science Fiction</item>
+    </string-array>
+</resources>

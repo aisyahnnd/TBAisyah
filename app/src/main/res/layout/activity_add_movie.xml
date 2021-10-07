@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".AddMovieActivity">
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Title"
+        android:inputType="text"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/edtTitle"
+        android:hint="Year"
+        android:inputType="number"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/spinnerGenre"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtYear"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/data_genre"
+        android:inputType="textLongMessage"
+        android:popupBackground="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/spinnerGenre"
+        android:hint="Description"
+        android:inputType="text"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtDesc"
+        app:srcCompat="@mipmap/ic_launcher"/>
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDesc"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_toEndOf="@id/imageView"
+        android:background="@drawable/btn_rounded_primary"
+        android:text="Choose Image" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageView"
+        android:background="@drawable/btn_rounded_primary"
+        android:text="Add Movie"/>
+
+</RelativeLayout>

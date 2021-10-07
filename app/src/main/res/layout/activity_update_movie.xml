@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/imageViewMovie"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"/>
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="372dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageViewMovie"
+        android:hint="Title"
+        android:textColor="@color/colorText"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="372dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTitle"
+        android:hint="Year"
+        android:textColor="@color/colorText"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinnerGenre"
+        android:layout_width="372dp"
+        android:layout_height="50dp"
+        android:entries="@array/data_genre"
+        android:popupBackground="@android:color/black"
+        android:layout_below="@+id/edtYear" />
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="372dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinnerGenre"
+        android:hint="Description"
+        android:textColor="@color/colorText"
+        android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_rounded_primary"
+        android:layout_below="@+id/edtDesc" />
+
+</RelativeLayout>
